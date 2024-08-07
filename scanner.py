@@ -12,11 +12,10 @@ window.title("bar code scanner")
 window.configure(bg="tan4")
 window.geometry("300x400")
 
-#create a label to display video
 vdo=Label(window)
 vdo.grid(padx=10,pady=10)
 
-#capture camera
+
 cap=cv2.VideoCapture(0)
 
 def read_barcode(frame):
