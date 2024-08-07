@@ -20,7 +20,7 @@ cap=cv2.VideoCapture(0)
 
 def read_barcode(frame):
     barcode=decode(frame)
-    txt.delete(0,END)#delete previous entry
+    txt.delete(0,END)
 
     for barcodes in barcode:
         x,y,w,h=barcodes.rect
@@ -32,10 +32,10 @@ def read_barcode(frame):
         #2
         font = cv2.FONT_HERSHEY_DUPLEX
         cv2.putText(frame, barcode_info, (x - 6, y - 6), font, 2.0, (0, 0, 0), 1)
-        txt.insert (0, barcode_info+" " )#insert new entry
+        txt.insert (0, barcode_info+" " )
     return frame
     
-#function for video streaming
+
 def video_stream():
     _,frame=cap.read()
 
