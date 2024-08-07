@@ -1,3 +1,6 @@
+#DEVELOPED BY <PRIYANSHUL SHARNA>
+# WEBPAFE Priyanshul.is-a.dev
+
 from tkinter import *
 from PIL import ImageTk,Image
 import cv2
