@@ -1,5 +1,5 @@
 #DEVELOPED BY <PRIYANSHUL SHARNA>
-# WEBPAFE Priyanshul.is-a.dev
+# WEBPAGE Priyanshul.is-a.dev
 
 from tkinter import *
 from PIL import ImageTk,Image
